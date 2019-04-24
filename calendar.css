@@ -1,0 +1,118 @@
+/*
+Name: Gabe Unruh
+Course: CSC337
+Description: This is the style sheet for the calendar. It organizes the page into a left section
+for inputs and the calendar on the right and creates the classes to style the elements added from 
+the javascript file.
+*/
+
+body{
+	background-color: #d7e3f7;
+}
+
+h1{
+	font-family: "Georgia", serif;
+	text-align: center;
+}
+
+#left{
+	float: left;
+}
+
+#right{
+	float: left;
+	position: relative;
+}
+
+#addDate > div, #getEvents > div, .description, #status{
+	margin: 15px;
+}
+
+#addDate, #getEvents{
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 5px;
+	float: left;
+	margin: 20px;
+	width: 350px;
+}
+
+#getEvents{
+	clear: left;
+}
+
+.description{
+	font-size: 14pt; 
+}
+
+.boxes{
+	background-color: white;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	cursor: pointer;
+	height: 79px;
+	position: absolute;
+	width: 109px;
+	overflow-y: auto;
+}
+
+.numbers{
+	font-family: "Andale Mono", monospace;
+	font-size: 10pt;
+	margin: 0 0 0 2px;
+}
+
+.weekdays{
+	font-size: 13pt;
+	text-align: center;
+	margin: 4pt 0 0 0;
+}
+
+.days{
+	background-color: white;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	cursor: default;
+	height: 29px;
+	position: absolute;
+	width: 109px;
+}
+
+.calendarText{
+	font-size: 9pt;
+	margin: 0 0 0 2px;
+}
+
+.event{
+	background-color: #d7e3f7;
+	margin-top: 1px;
+}
+
+#displayBox{
+	background-color: white;
+	border-color: black;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	display: none;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	top: 30%;
+	right: 30%;
+	width: 200px;
+}
+
+#back{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+#w3c{
+	position: fixed;
+    bottom: 0;
+    right: 0;
+}
