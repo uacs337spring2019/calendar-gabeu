@@ -165,7 +165,7 @@
 		newHeader.innerHTML = "Events on May " + id + ':';
 		displayArea.appendChild(newHeader);
 		//gets the events to be added to the display box
-		let url = "http://app_name.herokuapp.com:";
+		let url = "http://app_name.herokuapp.com";
 		fetch(url)
 			.then(checkStatus)
 			.then(function(responseText) {
